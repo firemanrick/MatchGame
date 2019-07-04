@@ -1,59 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" >
 
-<head>
-  <meta charset="UTF-8">
-  <title>Foreplay Memory Game with timer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="UTF-8">
+		<title>Foreplay Memory Game with timer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./style.css">
+	</head>
 
-  
-  
-      <link rel="stylesheet" href="./style.css">
-
-  
-</head>
-
-<body>
-
-  <body>
-		
-	<div class="row">
-    <div class="timer">
-			<audio id="timer-beep">
-  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/41203/beep.mp3"/>
-  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/41203/beep.ogg" />
-</audio>
+	<body>
+		<div class="row">
+			<div class="timer">
+				<audio id="timer-beep">
+					<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/41203/beep.mp3"/>
+					<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/41203/beep.ogg" />
+				</audio>
+			</div>
 		</div>
-  </div>
-  <div class="row-fluid">
-    <div id="add" class="updown span6 ">+</div>
-    <div id="minus" class="updown span6">-</div>
-  </div>
-  <div class="selections" id="buttons">
-    <div class="row-fluid buttons">
-    <button class="btn btn-success span4" id="start">Start/Resume</button>
-    <button class="btn btn-warning span4" id="stop">Pause</button>
-    <button class="btn btn-danger span4 " id="reset">Reset</button>
-    </div>
-  </div>
-</body>
+		<div class="row-fluid">
+			<div id="add" class="updown span6 ">+</div>
+			<div id="minus" class="updown span6">-</div>
+		</div>
+		<div class="selections" id="buttons">
+			<div class="row-fluid buttons">
+			<button class="btn btn-success span4" id="start">Start/Resume</button>
+			<button class="btn btn-warning span4" id="stop">Pause</button>
+			<button class="btn btn-danger span4 " id="reset">Reset</button>
+			</div>
+		</div>
+	</body>
 
-<div class='head'>
-
-	<div class='start'>Start Game</div>
-</div>
-<br>
-<br>
-  <div class="room" align="center"></div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-  
-
-    <script  src="./script.js"></script>
-
-
-
-
-</body>
-
+	<div class='head'>
+		<div class='start'>Start Game</div>
+	</div>
+	<br>
+	<br>
+		<div class="room" align="center"></div>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+			<script  src="./script.js"></script>
 </html>
