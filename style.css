@@ -1,0 +1,236 @@
+body {
+	text-align: center;
+	background-color: #ffcccc;
+}
+h1 {
+	font-size: 80px;
+	 font-family: "Arial", cursive;
+	color: #4d94ff;
+}
+.timer {
+	font-size: 40px;
+}
+
+#timer-beep {
+  position: absolute;
+  top: -100000em;
+}
+
+
+#start,
+#stop,
+#reset {
+	font-size: 19px;
+	margin-top: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 120px;
+	height: 50px;
+}
+
+#start {
+	width: 150px;
+}
+
+.updown {
+	font-size: 35px;
+	padding: 5px 5px 5px 5px;
+	
+	
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #4d94ff;
+	color: white;
+}
+.updown:hover {
+	color: #4d94ff;
+	background-color: white;
+	cursor: pointer;
+}
+
+.buttons {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Arial");
+body {
+	margin: 0 auto;
+	font-family: "Arial", cursive;
+}
+
+.head {
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+	font-size: 30px;
+}
+
+.head .start {
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: -20px;
+	background: #7b7c7d;
+	background-image: linear-gradient(to bottom, #7b7c7d, #242424);
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 20px 20px 20px 20px;
+	text-decoration: none;
+	text-weight: 600;
+	cursor: pointer;
+}
+
+.room .card {
+	display: inline-flex;
+	width: 145px;
+	height: 145px;
+	position: relative;
+	margin: 5px;
+	transition: 0.4s;
+	-webkit-transform-style: preserve-3d;
+}
+.room .card .face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	z-index: 2;
+}
+.room .card .front {
+	position: absolute;
+	background: url(https://s3.amazonaws.com/memory-hosting-mobilehub-133708707/images/match_game.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 1;
+}
+.room .card .back {
+	transform: rotateY(-180deg);
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.flip,
+.fliped {
+	transform: rotateY(180deg);
+	transition: 0.4s;
+}
+
+.board {
+	position: relative;
+	width: 400px;
+	top: -425px;
+	height: 300px;
+	border: 15px inset teal;
+	border-radius: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+	color: #4d4ba3;
+	box-shadow: 0px 0px 50px 0px rgba(50, 50, 50, 0.82);
+}
+
+.board .greet {
+	font-size: 45px;
+	margin: 10px;
+	font-weight: 700;
+}
+
+.board .scr {
+	font-size: 27px;
+	margin: 10px;
+	font-weight: 500;
+}
+
+.board .scr_time {
+	display: inline-flex;
+	font-size: 27px;
+	margin: 10px;
+	font-weight: 600;
+}
+
+.board .scr_move {
+	display: inline-flex;
+	font-size: 27px;
+	margin: 10px;
+	font-weight: 600;
+}
+
+.board .again {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #2cbda5;
+	background-image: linear-gradient(to bottom, #2cbda5, #123e59);
+	border-radius: 15px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 25px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+.board .again:hover {
+	background: #38c5de;
+	background-image: linear-gradient(to bottom, #38c5de, #325063);
+	text-decoration: none;
+}
+
+.me {
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 890px) {
+	.room .card {
+		width: 95px;
+		height: 95px;
+	}
+
+	.board {
+		top: -385px;
+	}
+}
+@media only screen and (max-width: 690px) {
+	.room .card {
+		width: 65px;
+		height: 65px;
+	}
+
+	.board {
+		width: 300px;
+		top: -325px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.room .card {
+		width: 40px;
+		height: 40px;
+	}
+
+	.board {
+		width: 300px;
+		top: -125px;
+	}
+}
+
+@media only screen and (max-width: 290px) {
+	.room .card {
+		width: 25px;
+		height: 25px;
+	}
+
+	.board {
+		width: 300px;
+		top: -90px;
+	}
+}
